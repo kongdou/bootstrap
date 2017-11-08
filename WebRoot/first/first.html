@@ -7,28 +7,157 @@
 <link href="../css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
-<h2>Hello,World!</h2>
-<script src="../js/jquery.js"></script>
-<script src="../js/bootstrap.js"></script>
-<div class="container">
-	<div class="row">
-	 	<div class="col-md-1">.col-md-1</div>
-	 	<div class="col-md-1">.col-md-1</div>
-	 	<div class="col-md-1">.col-md-1</div>
-	 	<div class="col-md-1">.col-md-1</div>
-	 	<div class="col-md-1">.col-md-1</div>
-	 	<div class="col-md-1">.col-md-1</div>
-	 	<div class="col-md-1">.col-md-1</div>
-	 	<div class="col-md-1">.col-md-1</div>
-	 	<div class="col-md-1">.col-md-1</div>
-	 	<div class="col-md-1">.col-md-1</div>
-	 	<div class="col-md-1">.col-md-1</div>
-	 	<div class="col-md-1">.col-md-1</div>
+	<script src="../js/jquery.js"></script>
+	<script src="../js/bootstrap.js"></script>
+	<h3>栅格</h3>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8">.col-md-1</div>
+			<div class="col-md-4">.col-md-1</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">.col-md-4</div>
+			<div class="col-md-4 col-md-offset-4">col-md-4 col-md-offset-4</div>
+		</div>
+		<div class="row">
+			<div class="col-md-9">
+				<div class="row">
+					<div class="col-md-8">col-md-8</div>
+					<div class="col-md-4">col-md-4</div>
+				</div>
+			</div>
+			<div class="col-md-3">col-md-3</div>
+		</div>
+		<div class="row">
+			<div class="col-md-9">.col-md-9</div>
+			<div class="col-md-3">.col-md-3</div>
+		</div>
+		<div class="row">
+			<div class="col-md-9 col-md-push-3">.col-md-9</div>
+			<div class="col-md-3 col-md-pull-9">.col-md-3</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12 col-md-8">col-sm-12 col-md-8</div>
+			<div class="col-sm-6 col-md-4">col-sm-6 col-md-4</div>
+		</div>
 	</div>
-	<div class="row">
-	 	<div class="col-md-8">.col-md-1</div>
-	 	<div class="col-md-4">.col-md-1</div>
+	<h3>颜色样式</h3>
+	<button type="button" class="btn btn-primary">primary</button>
+	<button type="button" class="btn btn-success">success</button>
+	<button type="button" class="btn btn-info">info</button>
+	<button type="button" class="btn btn-warning">warning</button>
+	<button type="button" class="btn btn-danger">danger</button>
+
+	<div class="alert alert-warning">warning</div>
+	<div class="alert alert-danger">danger</div>
+
+	<h3>尺寸样式</h3>
+	<button type="button" class="btn btn-xs btn-primary">Primary</button>
+	<button type="button" class="btn btn-sm btn-success">Success</button>
+	<button type="button" class="btn  btn-info">info</button>
+	<button type="button" class="btn btn-lg btn-warning">warning</button>
+	<div class="well well-lg">well lg</div>
+	<div class="well well-sm">well sm</div>
+	<div class="alert alert-success alert-sm">
+		<p>第一段</p>
+		<p>第二段</p>
 	</div>
-</div>
+	<h3>动画样式</h3>
+	<div class="progress progress-striped active">
+		<div class="progress-bar" style="width:45%">
+			<div class="sr-only">45% complete</div>
+		</div>
+	</div>
+	<h3>HTML布局</h3>
+	<div class="alert">
+		<button type="button" class="close" data-dismiss="alert">&times;</button>
+		<strong>警告！</strong>你输入的项目不合法
+	</div>
+	<div class="btn-group">
+		<button type="button" class="btn btn-default dropdown-toggle"
+			data-toggle="dropdown">
+			我的书籍<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+			<li><a href="#">javascript</a></li>
+			<li><a href="#">java</a></li>
+			<li><a href="#">bootstrap</a></li>
+			<li class="divider"></li>
+			<li><a href="#">C#</a></li>
+		</ul>
+	</div>
+	<ul class="nav nav-tabs" id="myTab">
+		<li class="active"><a data-toggle="tab" href="#home">首页</a></li>
+		<li class=""><a data-toggle="tab" href="#profile">个人资料</a></li>
+		<li class="dropdown"><a data-toggle="dropdown" href="#" class="dropdown-toggle">我的书籍 <b class="caret"></b></a>
+			<ul class="dropdown-menu">
+				<li><a data-toggle="tab" href="#dropdown1">javascript</a></li>
+				<li><a data-toggle="tab" href="#dropdown2">java</a></li>
+				<li><a data-toggle="tab" href="#dropdown3">bootstrap</a></li>
+				<li class="divider"></li>
+				<li><a data-toggle="tab" href="#dropdown4">C#</a></li>
+			</ul></li>
+	</ul>
+	<div class="tab-content" id="myContent">
+		<div id="home" class="tab-pane fade active in">
+			<p>单击首页显示的内容</p>
+		</div>
+		<div id="profile" class="tab-pane fade">
+			<p>单击个人资料显示的内容</p>
+		</div>
+		<div id="dropdown1" class="tab-pane fade">
+			<p>单击javascript显示的内容</p>
+		</div>
+		<div id="dropdown2" class="tab-pane fade">
+			<p>单击java显示的内容</p>
+		</div>
+		<div id="dropdown3" class="tab-pane fade">
+			<p>单击bootstrap显示的内容</p>
+		</div>
+		<div id="dropdown4" class="tab-pane fade">
+			<p>单击C#显示的内容</p>
+		</div>
+	</div>
+	<p class="lead">突出显示段落</p>
+	<p class="text-left">text-left</p>
+	<p class="text-center">text-center</p>
+	<p class="text-right">text-right</p>
+	<p class="text-justify">text-justify</p>
+	
+	<abbr title="缩略语显示">java</abbr>
+	<address>
+	<strong>公司</strong><br/>
+    北京市海淀区西海国际中心<br/>
+    <abbr title="Phone:">P:</abbr>01093023912
+	</address>
+	<address>
+		<strong>张三</strong>
+		<a href="mailto:#">zhaoxiaojie@sinosoft.com.cn</a>
+	</address>
+	<blockquote>
+		<p>阿迪发生地方阿斯顿发阿斯顿发阿道夫</p>
+		<small> 出自 <cite title="出自title">出处</cite></small>
+	</blockquote>
+	<ul>
+		<li>11111111</li>
+		<li>22222222</li>
+		<li>33333333</li>
+		<li>44444444</li>
+	</ul>
 </body>
 </html>
